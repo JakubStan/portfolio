@@ -1,0 +1,59 @@
+@import "../../styles/index.scss";
+
+#offer{
+
+   
+
+    .offer-content{
+        border-radius: $radius;
+        background-color:  $dark-blue;
+        padding: 80px 80px;
+        display: flex;
+        justify-content: space-between;
+
+        .left-col{
+
+         
+
+            .btn-light{
+                background-color: white;
+            }
+
+        }
+
+        .right-col{
+            display: flex;
+            justify-content: space-between;
+
+            .box{
+                color: white;
+                padding: 20px;
+
+                p{
+                    color: white !important;
+                }
+                
+                .box-icon{
+                    background-color: white;
+                    border-radius: $radius;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px;
+
+               
+
+                    svg{
+                        color: #262551;
+                        font-size: 40px;                
+                    }
+                }
+                h4{
+                    font-size: 20px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }           
+            }
+        }
+    }
+}

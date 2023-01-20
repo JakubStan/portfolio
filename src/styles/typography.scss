@@ -1,0 +1,31 @@
+p{
+    text-align: justify;
+	color: $light-blue;
+	font-size: 15px;
+	font-weight: bold;
+}
+  
+h3{
+    color: white;
+    font-size: 35px;
+}
+
+.heading{
+	margin-bottom: 40px;
+}
+
+.cv-link{
+			color: $light-blue;
+			background-color: transparent;
+			border: none;
+			font-size: 15px;
+			font-weight: 700;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+
+			svg{
+				color: $light-blue;
+				font-size: 35px;
+			}
+		}

@@ -1,0 +1,53 @@
+@import "../../../styles/index.scss";
+
+
+
+#skils{
+    
+
+    .skils{
+        background-color: $dark-blue;
+        border-radius: $radius;
+    }
+
+    .inner{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 100px;
+
+        .col{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 10px;
+
+            .item{
+                width: 100%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                
+                h5{
+                    color: white;
+                    padding-bottom: 10px;
+                }
+
+                .progressbar{
+            
+                div{
+                    overflow: initial !important;
+                    div{
+                        position: relative;
+                        left: -2px;
+                        background-color: $light-blue !important;
+                        justify-content: center !important;
+                    }
+                }
+       
+
+            }
+
+
+            }
+        }
+    }
+}

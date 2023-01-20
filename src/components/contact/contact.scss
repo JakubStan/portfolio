@@ -1,0 +1,22 @@
+@import "../../styles/index.scss";
+
+#contact{
+    background-color: $dark-blue;
+    color: white;
+    
+
+    .contact{
+        padding: 70px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .btn-light{
+            color: $dark-blue;
+            background-color: white;
+            margin-right: 200px;
+        }
+
+    }
+
+}

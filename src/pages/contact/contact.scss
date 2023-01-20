@@ -1,0 +1,36 @@
+@import "../../styles/index.scss";
+
+
+#contact-data{
+    margin-bottom: 500px;
+    
+    p{
+        margin-bottom: 100px;
+    }
+
+    .contact-data{
+        margin-top: 50px;
+
+        h4{
+            color: white;
+        }
+
+
+        a{
+            color: $light-blue;
+            margin-top: 10px;
+            display: inline-block;
+
+            &:hover{
+                color: white;
+            }
+        }
+    }
+    
+    img{
+        position: absolute;
+        right: 0;
+        bottom: -960px;
+        width: 670px;
+    }
+}

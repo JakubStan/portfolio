@@ -1,0 +1,31 @@
+@import "../../styles/index.scss";
+
+
+
+#photo{
+    margin: 0px;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 300px;
+
+    
+    .data{
+        display: flex;
+        justify-content: center;
+
+        p{
+            color: $light-blue;           
+            margin-top: 20px;
+            width: 600px;            
+        }
+
+        img{
+            position: absolute;
+            right: 200px;
+            top: 300px;
+            border-radius: $radius;
+        }
+    }
+
+
+}

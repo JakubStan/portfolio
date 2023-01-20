@@ -1,0 +1,44 @@
+@import '../../styles/index.scss';
+
+#about{
+
+	margin-top: 200px;
+
+	.about-content{
+
+		display: flex;
+		justify-content: space-between;
+		
+		.about-details{
+			
+			width: 600px;			
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			
+			p{			
+				margin-top: 30px;
+			}
+		
+			h3{
+				margin-bottom: 10px;						
+			}
+
+			.abouth-likns{
+				margin-top: 35px;
+				display: flex;
+				justify-content: space-between;
+				width: 280px;
+			}
+		}
+		
+		
+		img{
+			border-radius: $radius;
+			height: 300px;
+		}
+		
+	}
+	
+
+}

@@ -1,0 +1,116 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:ital,wght@0,400;1,300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    background-color: $body-bg;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+
+.container{
+  max-width: 1200px;
+  width: 100%;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+.btn-light{
+  background-color: $light-blue;
+  color: $dark-blue;
+  padding: 15px 45px !important;
+  border-radius: $radius-btn !important;
+  font-weight: bold;
+  font-size: 15px;
+  display: inline-block;
+
+}
+
+.blue-bg{
+  background-color: $dark-blue;    
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  color: white;
+  margin-top: 50px;
+  
+    h2{
+      font-size: 50px;
+    }
+  
+  }
+
+
+.git-hub{
+  font-size: 50px;
+  color: white;
+}
+
+.github-link, .git-hub{
+  &:hover{
+    color: $light-blue;
+  }
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+
+.cv-link{
+  color: $light-blue;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  svg{
+    color: $light-blue;
+    font-size: 35px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,115 @@
+@import '../../styles/index.scss';
+
+#hero{	
+	width: 100%;
+	margin-top: 200px;
+  
+
+	.hero-top{
+		p{
+			font-size: 20px;
+		}
+	
+		h3{		
+			margin-bottom: 10px;
+	
+		}
+	
+	
+		.photo{
+			&::after{
+				content: "";
+				background-color: $dark-blue;
+				width: 520px;
+				height: 400px;
+				position: absolute;
+				right: -100px;
+				z-index: -1;
+				top: 215px;
+				border-top-left-radius: $radius;
+				border-bottom-left-radius: $radius;
+			}
+		}
+		img{
+			height: 300px;
+			position: absolute;
+			right: 200px;
+			top: 260px;
+			border-radius: $radius;
+	
+		}
+	
+	
+		svg{		
+			font-size: 50px;
+		}
+	
+		.contact{
+		
+			color: $dark-blue;		
+			margin-top: 50px;
+			display: flex;
+			align-items: center;
+			width: 500px;
+			justify-content: space-between;
+
+
+			.cv-link{
+				color: $light-blue !important;
+				padding: 5px 30px;
+				border: 1px solid transparent;
+								
+				svg{
+					font-size: 35px;
+				}
+
+				&:hover{
+					border: 1px solid white;
+					border-radius: 30px;
+					padding: 5px 30px;
+				}
+			}
+		
+		}
+	
+		
+	
+	}
+
+
+	
+
+	.hero-bottoma{
+		display: flex;
+		margin-top: 250px;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.box{
+
+		background-color: $light-blue;
+		padding: 15px 80px;
+		border-radius: $radius;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;;
+
+		&:nth-child(2){
+			background-color: $dark-blue;
+		}
+
+		img{
+			height: 80px;
+			margin-bottom: 10px;
+		}
+
+		p{
+		color: white;
+		font-weight: bold;
+		}
+}
+
+
+}
