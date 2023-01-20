@@ -3,9 +3,9 @@ import "./technologies.scss";
 import { useLocation } from "react-router-dom";
 
 import Bootstrap from "../icons/Bootstrap.png";
-import HTML from "../icons/HTML.png";
+import HTML from "../icons/Html.png";
 import Css from "../icons/Css.png";
-import Js from "../icons/Js.png";
+import JS from "../icons/JS.png";
 import Scss from "../icons/Scss.png";
 import ReactIcon from "../icons/React.png";
 import Wordpress from "../icons/Wordpress.png";
@@ -38,7 +38,7 @@ const Technologies = () => {
               </div>
 
               <div className="box">
-                <img src={Js} alt />
+                <img src={JS} alt />
               </div>
 
               <div className="box">
