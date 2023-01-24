@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:ital,wght@0,400;1,300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0f0f0f;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-light {
+  background-color: #85a7fe;
+  color: #012384;
+  padding: 15px 45px !important;
+  border-radius: 30px !important;
+  font-weight: bold;
+  font-size: 15px;
+  display: inline-block;
+}
+
+.blue-bg {
+  background-color: #012384;
+  height: 300px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  color: white;
+  margin-top: 50px;
+}
+
+.blue-bg h2 {
+  font-size: 50px;
+}
+
+.git-hub {
+  font-size: 50px;
+  color: white;
+}
+
+.github-link:hover, .git-hub:hover {
+  color: #85a7fe;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+.cv-link {
+  color: #85a7fe;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cv-link svg {
+  color: #85a7fe;
+  font-size: 35px;
+}
+
+p {
+  text-align: justify;
+  color: #85a7fe;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+h3 {
+  color: white;
+  font-size: 35px;
+}
+
+.heading {
+  margin-bottom: 40px;
+}
+
+.cv-link {
+  color: #85a7fe;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cv-link svg {
+  color: #85a7fe;
+  font-size: 35px;
+}
+
+.portfolio-links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[2];
+      grid-template-columns: repeat(2, 2fr);
+  gap: 30px;
+}
+
+.portfolio-links a {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.portfolio-links a img {
+  width: 545px;
+  border-radius: 15px;
+}
+
+.portfolio-links a h5 {
+  color: #012384;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.portfolio-links a p {
+  color: gray;
+  font-weight: bold;
+}
+
+.portfolio-links .portfolio-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 80px;
+}
+
+.portfolio-links .portfolio-link h3 {
+  color: #85a7fe;
+  font-size: 40px;
+}
+
+.portfolio-links .portfolio-link .btn-light {
+  background-color: #012384;
+  color: white;
+  margin-top: 30px;
+}
+/*# sourceMappingURL=portfolio.css.map */

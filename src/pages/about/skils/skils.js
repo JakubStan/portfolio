@@ -1,7 +1,7 @@
 import React from "react";
 import "./skils.scss";
-import ProgressBar from "@ramonak/react-progress-bar";
-ProgressBar;
+import ProgressBar from "./react-progress-bar";
+
 const Skils = () => {
   return (
     <>

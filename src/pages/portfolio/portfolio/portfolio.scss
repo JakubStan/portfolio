@@ -8,14 +8,14 @@
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     gap: 30px;
-  
-    a{     
-        background-color: white;
+
+    .page-link{        
         display: flex;
-        flex-direction: column;               
-        align-items: start;
+        flex-direction: column;             
         padding: 20px;
         border-radius: $radius;
+        background-color: white;
+    }
   
              
   
@@ -42,22 +42,26 @@
     .portfolio-link{
         display: flex;
         justify-content: center;
-        align-items: baseline;
         flex-direction: column;
         padding-left: 80px;
+
+        .content{
+            display: flex;
+            flex-direction: column;      
+            align-items: flex-start;
+       
   
         h3{
             color: $light-blue;
             font-size: 40px;
+            margin-bottom: 30px;
+          
         }
+    }
   
-        .btn-light{
-            background-color: $dark-blue;
-            color: white;
-            margin-top: 30px;
-        }
+
         
     }
   
   
-  }
+  

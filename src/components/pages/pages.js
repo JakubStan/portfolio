@@ -10,29 +10,31 @@ const Pages = () => {
       <section id="pages">
         <div className="container">
           <div className="portfolio-links">
-            <a href="https://www.elmark-rtv.pl/">
+            <a className="page-link" href="https://www.elmark-rtv.pl/">
               <img src={Elmark} alt="Elmark" />
               <h5>Elmark - Profsjonalny Sklep</h5>
               <p>Profesjonalny sklep z elektroniką</p>
             </a>
 
             <div className="portfolio-link">
-              <h3>
-                Zobacz moje <br></br>
-                najnowsze realizacje.
-              </h3>
-              <Link to="portfolio" className="btn-light">
-                Zobacz więcej
-              </Link>
+              <div className="content">
+                <h3>
+                  Zobacz moje <br></br>
+                  najnowsze realizacje.
+                </h3>
+                <Link to="portfolio" className="btn btn__dark">
+                  Zobacz więcej
+                </Link>
+              </div>
             </div>
 
-            <a href="https://szatan-cars.pl/">
+            <a className="page-link" href="https://szatan-cars.pl/">
               <img src={SzatanCars} alt=" Szatan Cars" />
               <h5>Szatan Cars</h5>
-              <p>Wypożyczasna samochodów Szatan Cars</p>
+              <p>Wypożyczalnia samochodów Szatan Cars</p>
             </a>
 
-            <a href="http://tylka-extrem-hobby.pl/">
+            <a className="page-link" href="http://tylka-extrem-hobby.pl/">
               <img src={Tylka} alt="Tylka Extreme Hobby" />
               <h5>Tylka Extreme Hobby</h5>
               <p>Offroad i Paintball w podhalańskich lasach</p>

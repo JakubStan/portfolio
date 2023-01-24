@@ -8,6 +8,7 @@ import Kotwica from "../../../img/Kotwica.png";
 import Wyroby from "../../../img/Wyroby.png";
 import GAP from "../../../img/GAP.png";
 import Naprawy from "../../../img/Naprawy.png";
+import Noclegi from "../../../img/Noclegizwidokami.png";
 
 const MyPortfolio = () => {
   return (
@@ -24,7 +25,7 @@ const MyPortfolio = () => {
           <a href="http://szatan-cars.pl/" className="page-link">
             <img src={SzatanCars} alt=" Szatan Cars" />
             <h5>Szatan Cars</h5>
-            <p>Wypożyczasna samochodów Szatan Cars</p>
+            <p>Wypożyczalnia Samochodów Szatan Cars</p>
           </a>
 
           <a href="http://tylka-extrem-hobby.pl/" className="page-link">
@@ -35,7 +36,7 @@ const MyPortfolio = () => {
 
           <a href="http://www.elmark-rtv.pl/" className="page-link">
             <img src={Elmark} alt=" Szatan Cars" />
-            <h5>Elmark - Profesjonalny skleo</h5>
+            <h5>Elmark - Profesjonalny sklep</h5>
             <p>Profesjonalny sklep z elektroniką</p>
           </a>
 
@@ -63,8 +64,8 @@ const MyPortfolio = () => {
             <p>Firma Remontowo Budowlana</p>
           </a>
 
-          <a href="http://noclegizwidokami.pl/" className="page-link">
-            <img src={Naprawy} alt="Naprawy Awarie" />
+          <a href="https://noclegizwidokami.pl/" className="page-link">
+            <img src={Noclegi} alt="Noclegi z widokami" />
             <h5>Noclegi z Widokami</h5>
             <p>Pensjonat w Rzepiskach</p>
           </a>

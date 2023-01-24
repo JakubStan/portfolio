@@ -30,17 +30,17 @@ const About = () => {
             dla mnie to nie tylko praca - to coś dużo więcj. To pasja,
             zainteresowanie, hobby coś co na prawdę uwielbiam. Celem życia nie
             jest jego przeżycie, daltego też rozwój osobisty ,zdobywanie nowej
-            wiedzy i umiejętnosci są istotną częścia mojego życia. Tworze
+            wiedzy i umiejętność są istotną częścią mojego życia. Tworzę
             profesjonalne strony www oraz sklepy internetowe. Specjalizuję się w
             technologiach webowych w obszarze front-endu: HTML, CSS.
           </p>
 
           <p>
             Swoją przygodę z branżą IT rozpocząłem w 2012, posiadam wyższe
-            wykształcenie. Ukończyłem studia podylomowe na Akademi
+            wykształcenie. Ukończyłem studia podylomowe na Akademii
             Górniczo-Hutniczej im. Stanisława Staszica w Krakowie. Interesuję
             się historią, politologią, polityką oraz sztukami walki - posiadam
-            stopnie mistrzowskie. Moją naj większą życiową pasją jest Taekwondo
+            stopnie mistrzowskie. Moją największą życiową pasją jest Taekwondo
             oraz Krav Maga - nie ma miękkiej gry czy to na ringu czy w kodzie.
           </p>
 

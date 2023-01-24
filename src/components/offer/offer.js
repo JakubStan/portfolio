@@ -25,7 +25,7 @@ const Offer = () => {
                 dla Ciebie<br></br>
                 zrobić?
               </h3>
-              <Link to="offer" className="btn-light">
+              <Link to="/offer" className="btn btn__white">
                 Zobacz więej
               </Link>
             </div>

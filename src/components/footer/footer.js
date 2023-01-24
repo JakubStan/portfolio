@@ -21,11 +21,11 @@ const Footer = () => {
         <div className="container footer-container">
           <div className="col">
             <h4>
-              <spam>Jakub</spam>Stankiewicz
+              <span>Jakub</span>Stankiewicz
             </h4>
             <p>
-              Tworze profesjonalne strony www oraz sklepy internetowe.
-              Specjalizuję się w technologiach webowych w obszarze front-endu:
+              Tworzę profesjonalne strony www oraz sklepy internetowe.
+              Specjalizuję się w technologiach webowych w obszarze Front-Endu:
               HTML, CSS.
             </p>
           </div>
@@ -51,8 +51,10 @@ const Footer = () => {
           </div>
         </div>
         <div className="copyright">
-          Copyright © 2023 Jakub Stankiewicz, all Right Reserved. Development by
-          JMS
+          <p>
+            Copyright © 2023 Jakub Stankiewicz, all Right Reserved. Development
+            by JMS
+          </p>
         </div>
       </footer>
     </>

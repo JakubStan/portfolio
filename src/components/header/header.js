@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.scss";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import { HiMail } from "react-icons/hi";
 import { BsFillTelephoneFill } from "react-icons/bs";
@@ -40,41 +40,38 @@ const header = () => {
             </div>
           </div>
 
-          <a href="https://github.com/JakubStan" className="github-link">
+          <a href="https://github.com/JakubStan" className="github-NavLink">
             <AiFillGithub />
           </a>
         </div>
 
         <div className="header-bottom">
-          <Link to="/" className="logo">
+          <NavLink to="/" className="logo">
             <h1>
               <span>Jakub</span>Stankiewicz
             </h1>
-          </Link>
+          </NavLink>
           <input class="menu-btn" type="checkbox" id="menu-btn" />
           <label class="menu-icon" for="menu-btn">
             <span class="navicon"></span>
           </label>
           <ul class="menu">
             <li>
-              <Link to="/">Home</Link>
+              <NavLink to="/about">O mnie</NavLink>
             </li>
             <li>
-              <Link to="/about">O mnie</Link>
+              <NavLink to="/offer">Usługi</NavLink>
             </li>
             <li>
-              <Link to="/offer">Usługi</Link>
+              <NavLink to="/portfolio">Portfolio</NavLink>
             </li>
             <li>
-              <Link to="/portfolio">Portfolio</Link>
+              <NavLink to="/contact">Kontakt</NavLink>
             </li>
             <li>
-              <Link to="/contact">Kontakt</Link>
-            </li>
-            <li>
-              <Link className="question" to="">
+              <NavLink className="question" to="">
                 Zadaj pytanie
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>

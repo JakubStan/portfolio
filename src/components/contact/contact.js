@@ -13,7 +13,7 @@ const Contact = () => {
           </h3>
 
           <div>
-            <Link href="" className="btn-light">
+            <Link to="/contact" className="btn btn__white">
               Napisz do mnie
             </Link>
           </div>

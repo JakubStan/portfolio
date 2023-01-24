@@ -18,8 +18,9 @@ const Photo = () => {
     heading = "Oferta / Usługi";
     description = (
       <p>
-        Tworze profesjonalne strony www oraz sklepy internetowe. Specjalizuję
-        się w technologiach webowych w obszarze front-endu: HTML, CSS.
+        Tworzę profesjonalne strony www oraz sklepy internetowe. <br></br>
+        Specjalizuję się w technologiach webowych w obszarze Front-Endu: HTML,
+        CSS.
       </p>
     );
   } else if (pathname === "/about") {
@@ -37,7 +38,7 @@ const Photo = () => {
       <p>
         Jesteś zinteresowany współpracą? Potrzebujesz strony www, chcesz
         przenieść swój biznes do internetu?<br></br>
-        Napisz/zadzwoń odpowięm tak szybko jak to możliwę. Na pewno się
+        Napisz/zadzwoń odpowiem tak szybko jak to możliwe. Na pewno się
         dogadamy!
       </p>
     );

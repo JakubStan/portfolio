@@ -16,21 +16,21 @@ const PagesOffer = () => {
               najnowsze realizacje.
             </h3>
             <div className="right">
-              <Link
-                to="https://github.com/JakubStan?tab=repositories"
+              <a
+                href="https://github.com/JakubStan?tab=repositories"
                 className="github-link"
               >
                 <AiFillGithub className="git-hub" />
-              </Link>
+              </a>
 
-              <Link className="btn-light" href="">
+              <Link className="btn btn__dark" to="/portfolio">
                 Zobacz więcej
               </Link>
             </div>
           </div>
 
           <div className="portfolio-links">
-            <a href="http://szatan-cars.pl/" className="page-link">
+            <a href="http://www.szatan-cars.pl/" className="page-link">
               <img src={SzatanCars} alt=" Szatan Cars" />
               <h5>Szatan Cars</h5>
               <p>Wypożyczasna samochodów Szatan Cars</p>

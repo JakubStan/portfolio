@@ -30,7 +30,7 @@ const About = () => {
               </p>
 
               <div className="abouth-likns">
-                <Link className="btn-light" to="/about">
+                <Link className="btn btn__light" to="/about">
                   Zobacz więcej
                 </Link>
                 <a href="https://github.com/JakubStan">

@@ -44,7 +44,7 @@ const Hero = () => {
               </p>
 
               <div className="contact">
-                <Link to="contact" className="btn-light">
+                <Link to="contact" className="btn btn__light">
                   Skontaktuj się
                 </Link>
 

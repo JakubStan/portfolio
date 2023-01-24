@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:ital,wght@0,400;1,300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0f0f0f;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-light {
+  background-color: #85a7fe;
+  color: #012384;
+  padding: 15px 45px !important;
+  border-radius: 30px !important;
+  font-weight: bold;
+  font-size: 15px;
+  display: inline-block;
+}
+
+.blue-bg {
+  background-color: #012384;
+  height: 300px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  color: white;
+  margin-top: 50px;
+}
+
+.blue-bg h2 {
+  font-size: 50px;
+}
+
+.git-hub {
+  font-size: 50px;
+  color: white;
+}
+
+.github-link:hover, .git-hub:hover {
+  color: #85a7fe;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+.cv-link {
+  color: #85a7fe;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cv-link svg {
+  color: #85a7fe;
+  font-size: 35px;
+}
+
+p {
+  text-align: justify;
+  color: #85a7fe;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+h3 {
+  color: white;
+  font-size: 35px;
+}
+
+.heading {
+  margin-bottom: 40px;
+}
+
+.cv-link {
+  color: #85a7fe;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cv-link svg {
+  color: #85a7fe;
+  font-size: 35px;
+}
+
+.header {
+  width: 100%;
+  z-index: 3;
+  padding-right: 150px;
+  padding-left: 150px;
+  top: 0;
+}
+
+.header .active {
+  color: #85a7fe !important;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.header .github-NavLink {
+  color: white;
+  font-size: 30px;
+}
+
+.header .github-NavLink:hover {
+  color: #85a7fe;
+}
+
+.header li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding: 15px 45px;
+}
+
+.header li a:hover {
+  color: #85a7fe;
+}
+
+.header li .question {
+  border: 1px solid white;
+  border-radius: 30px;
+  color: #85a7fe;
+}
+
+.header li .question:hover {
+  background-color: white;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before {
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  -webkit-transition: max-height .2s ease-out;
+  transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  -webkit-transition: background .2s ease-out;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  width: 100%;
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  width: 100%;
+  top: -5px;
+}
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+.header-bottom {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-bottom .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.header-bottom .logo h1 {
+  font-weight: 800;
+  color: white;
+}
+
+.header-bottom .logo h1 span {
+  color: #85a7fe;
+  font-weight: 300;
+}
+
+.header-top {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-top .github-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-size: 30px;
+}
+
+.header-top .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 500px;
+}
+
+.header-top .contact .mail, .header-top .contact .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-top .contact a {
+  color: #85a7fe;
+}
+
+.header-top .contact a:hover {
+  color: white;
+}
+
+.header-top .contact svg {
+  color: #012384;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=header.css.map */
