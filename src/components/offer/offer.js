@@ -25,6 +25,9 @@ const Offer = () => {
                 dla Ciebie<br></br>
                 zrobić?
               </h3>
+
+              <h3 className="heading-mobile">Co mogę dla Ciebie zrobić?</h3>
+
               <Link to="/offer" className="btn btn__white">
                 Zobacz więej
               </Link>
@@ -33,19 +36,26 @@ const Offer = () => {
             <div className="right-col">
               <div className="box">
                 <div className="box-icon">
-                  <BsLaptop />
+                  <BsLaptop alt="Strony www" />
                 </div>
                 <h4>Strony www</h4>
                 <p>Profesjonalne responsywne strony www</p>
               </div>
               <div className="box">
                 <div className="box-icon">
-                  <FaShoppingCart />
+                  <FaShoppingCart alt="E sklepy" />
                 </div>
                 <h4>E-sklepy</h4>
                 <p>Przenieś swój biznes do internetu</p>
               </div>
             </div>
+
+            <Link
+              to="/offer"
+              className="btn btn__white btn_mobile btn__width-50"
+            >
+              Zobacz więej
+            </Link>
           </div>
         </div>
       </section>

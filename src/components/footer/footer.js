@@ -30,10 +30,12 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="col">
-            <h4>Usługi</h4>
-            <Link to="offer">Strony www</Link>
-            <Link to="offer">E-Sklepy</Link>
+          <div className="col col_inner">
+            <div className="inner">
+              <h4>Usługi</h4>
+              <Link to="offer">Strony www</Link>
+              <Link to="offer">E-Sklepy</Link>
+            </div>
           </div>
 
           <div className="col">
@@ -50,7 +52,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="copyright">
+        <div className="container copyright">
           <p>
             Copyright © 2023 Jakub Stankiewicz, all Right Reserved. Development
             by JMS

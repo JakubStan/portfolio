@@ -55,8 +55,12 @@ const Photo = () => {
 
         <div className="data">
           <div className="container">
-            <div>{description}</div>
             <img src={photo} alt="" />
+
+            <div>
+              <h2 className="mobile-header">O MNIE</h2>
+              {description}
+            </div>
           </div>
         </div>
       </section>

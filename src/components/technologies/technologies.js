@@ -9,6 +9,7 @@ import JS from "../icons/JS.png";
 import Scss from "../icons/Scss.png";
 import ReactIcon from "../icons/React.png";
 import Wordpress from "../icons/Wordpress.png";
+import Webpack from "../icons/Webpack.png";
 
 const Technologies = () => {
   const { pathname } = useLocation();
@@ -26,31 +27,35 @@ const Technologies = () => {
             <h3 className="heading">Jakich używam technologii</h3>
             <div className="boxes">
               <div className="box">
-                <img src={HTML} alt />
+                <img src={HTML} alt="HTML" />
               </div>
 
               <div className="box">
-                <img src={Css} alt />
+                <img src={Css} alt="Css" />
               </div>
 
               <div className="box">
-                <img src={Scss} alt />
+                <img src={Scss} alt="Scss" />
               </div>
 
               <div className="box">
-                <img src={JS} alt />
+                <img src={JS} alt="JavaScript" />
               </div>
 
               <div className="box">
-                <img src={ReactIcon} alt />
+                <img src={ReactIcon} alt="React" />
               </div>
 
               <div className="box">
-                <img src={Wordpress} alt />
+                <img src={Wordpress} alt="Wordpress" />
               </div>
 
               <div className="box">
-                <img src={Bootstrap} alt />
+                <img src={Bootstrap} alt="Bootstrap" />
+              </div>
+
+              <div className="box">
+                <img src={Webpack} alt="Webpack" />
               </div>
             </div>
           </div>

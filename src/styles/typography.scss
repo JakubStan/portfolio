@@ -7,10 +7,29 @@ p{
 h3{
     color: white;
     font-size: 35px;
+	@include for-Extra-Small-devices {
+		font-size: 25px;
+	 }
+
+	 @include for-Small-devices {
+		font-size: 30px;
+	 }
+
+	 @include for-Medium-devices {
+		font-size: 35px;
+	 }
 }
 
 .heading{
 	margin-bottom: 40px;
+
+	@include for-Extra-Small-devices {
+		text-align: center;
+	}
+
+	@media (min-width: $Small) and (max-width: $Large){
+		text-align: center;
+	}
 }
 
 .cv-link{

@@ -12,11 +12,9 @@ const Contact = () => {
             Potrzebujesz darmowej wyceny?
           </h3>
 
-          <div>
-            <Link to="/contact" className="btn btn__white">
-              Napisz do mnie
-            </Link>
-          </div>
+          <Link to="/contact" className="btn btn__white">
+            Napisz do mnie
+          </Link>
         </div>
       </section>
     </>

@@ -11,6 +11,19 @@
         justify-content: space-between;
         align-items: center;
 
+        
+        @media (max-width: $Small) {
+            flex-direction: column;
+            .btn{
+                width: 100%;
+            }
+         }
+
+         @media (min-width: $Small) and (max-width: $Large){
+            flex-direction: column;          
+         }
+
+
         .btn-light{
             color: $dark-blue;
             background-color: white;

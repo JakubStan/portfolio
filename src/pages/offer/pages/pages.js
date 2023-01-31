@@ -38,7 +38,7 @@ const PagesOffer = () => {
 
             <a href="http://www.elmark-rtv.pl/" className="page-link">
               <img src={Elmark} alt=" Szatan Cars" />
-              <h5>Elmark - Profesjonalny skleo</h5>
+              <h5>Elmark - Profesjonalny sklep</h5>
               <p>Profesjonalny sklep z elektroniką</p>
             </a>
           </div>

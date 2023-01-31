@@ -7,6 +7,69 @@
 	padding-right: 150px;
 	padding-left: 150px;
 	top: 0;
+	position: relative;
+
+	@include for-Extra-Small-devices {
+		padding-right: 0px;
+		padding-left: 0px;
+
+		ul{
+			display: none;			
+		}
+
+	
+		.displayon{
+			top: 150px;
+		}
+
+	}
+
+	@include for-Small-devices {
+				padding-right: 10px;
+		padding-left: 10px;
+		ul{
+			display: none;			
+		}
+
+		.displayon{
+			top: 150px;
+		}
+	}
+
+	@include for-Medium-devices {
+		padding-right: 20px;
+		padding-left: 20px;
+
+		ul{
+			display: block;			
+		}
+	}
+
+	@include for-Large-devices {
+		padding-right: 30px;
+		padding-left: 30px;
+
+		ul{
+			display: block;			
+		}
+	
+	}
+
+
+
+
+	.displayon{
+		display: block !important;	
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;	
+		border-bottom: 2px solid #85a7fe;
+		z-index: 1;
+
+	}
 
 	.active{
 		color: $light-blue !important;
@@ -24,33 +87,58 @@
 	.github-NavLink{
 		color: white;
 		font-size: 30px;
+
+		@include for-Extra-Small-devices {
+			display: none;
+		}
+		
 		&:hover{
 			color: $light-blue;
 		}
 	}
 	li {
+
+		@include for-Extra-Small-devices {
+			text-align: center;
+			background-color: $body-bg;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+		@include for-Small-devices {
+			text-align: center;
+			background-color: $body-bg;
+			padding-top: 18px;
+			padding-bottom: 18px;
+		}
+
+		@include for-Medium-devices {	
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
+
+
+
+
 		a {
 			display: block;			
 	  		text-decoration: none;
       		color: white;
 			font-weight: 600;
-			padding: 15px 45px;
+			padding: 15px 45px;	
 			
 			&:hover {
 				color: $light-blue;				
 			}
 
+			@include for-Medium-devices {
+				padding: 15px 29px;
+			}
+
 		
 		}
 
-		.question{
-			border: 1px solid white;
-			border-radius: $radius-btn;
-			color: $light-blue;
-			&:hover{
-				background-color: white;
-			}
-		}
+	
 	}
 	.menu-btn {
 		&:hover {
@@ -110,7 +198,7 @@
 		display: inline-block;
 		
 		.navicon {
-			background: #333;
+			background: white;
 			display: block;
 			height: 2px;
 			position: relative;
@@ -118,7 +206,7 @@
 			width: 18px;
 
 			&:before {
-				background: #333;
+				background: white;
 				content: '';
 				display: block;
 				height: 100%;
@@ -129,7 +217,7 @@
 				
 			}
 			&:after {
-				background: #333;
+				background: white;
 				content: '';
 				display: block;
 				height: 100%;
@@ -168,11 +256,23 @@
   display: flex;
   justify-content: space-between;
 
+
+
+  @include for-Extra-Small-devices {
+	padding-left: 10px;
+	padding-right: 10px;
+  }
+
 	.logo {
 		display: flex;			
 		text-decoration: none;
 		align-items: center;
-		color: white;				
+		color: white;
+		z-index: 1;
+		
+		@include for-Extra-Small-devices {
+			font-size: 15px;
+		}
 			
 		h1{
 			font-weight: 800;
@@ -184,12 +284,26 @@
 		}	
 
 	}
+
+	.menu-icon{
+		padding-left: 0px;
+		padding-right: 0px;
+		z-index: 1;
+	}
+
+
+
 }
 
 .header-top{
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
+
+  @include for-Extra-Small-devices {
+	flex-direction: column;
+	align-items: center;
+  }
 
   .github-link{
 	display: flex;
@@ -206,10 +320,19 @@
 	justify-content: space-between;
 	width: 500px;
 
+	@include for-Extra-Small-devices {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	  }
+
 	.mail, .phone{
 		display: flex;
 		align-items: center;
-	
+
+		@include for-Extra-Small-devices {
+				margin-top: 5px;
+		}
 	}
 
 	a{

@@ -2,6 +2,10 @@
 
 
 #PagesOffer{
+
+    img{
+        width: 100%;
+    }
     h3{
         color: $light-blue;
     }
@@ -19,6 +23,22 @@
         width: 280px;
 
     }    
+    }
+
+    @include for-Extra-Small-devices {
+        h3,p{
+            text-align: center;
+        }
+
+        .top, .right{
+                flex-direction: column;
+                width: 100% !important;
+        }
+
+        .github-link{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
     }
 
 

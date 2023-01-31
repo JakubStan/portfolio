@@ -58,25 +58,24 @@ const Hero = () => {
                 </button>
               </div>
             </div>
-
             <div className="photo">
-              <img src={photo} />
+              <img src={photo} alt="Jakub Stankiewicz" />
             </div>
           </div>
 
           <div className="hero-bottoma">
             <div className="box">
-              <img src={icon1} />
+              <img src={icon1} alt="Promuj swoją firmę w sieci" />
               <p>Promuj swoją firmę w sieci</p>
             </div>
 
             <div className="box">
-              <img src={icon2} />
+              <img src={icon2} alt="Zdobywaj nowych klientów" />
               <p>Zdobywaj nowych klientów</p>
             </div>
 
             <div className="box">
-              <img src={icon3} />
+              <img src={icon3} alt="Zwiekszaj dochody firmy" />
               <p>Zwiekszaj dochody firmy</p>
             </div>
           </div>

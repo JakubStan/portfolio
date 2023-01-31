@@ -1,6 +1,7 @@
 import React from "react";
 import "./header.scss";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 import { HiMail } from "react-icons/hi";
 import { BsFillTelephoneFill } from "react-icons/bs";
@@ -19,6 +20,12 @@ function Mailto({ email, subject, body, ...props }) {
 }
 
 const header = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  const addVisibility = (event) => {
+    setIsActive((current) => !current);
+  };
+
   return (
     <>
       <header class="header">
@@ -52,10 +59,10 @@ const header = () => {
             </h1>
           </NavLink>
           <input class="menu-btn" type="checkbox" id="menu-btn" />
-          <label class="menu-icon" for="menu-btn">
+          <label class="menu-icon" for="menu-btn" onClick={addVisibility}>
             <span class="navicon"></span>
           </label>
-          <ul class="menu">
+          <ul class="menu" className={isActive ? "displayon" : ""}>
             <li>
               <NavLink to="/about">O mnie</NavLink>
             </li>
@@ -67,11 +74,6 @@ const header = () => {
             </li>
             <li>
               <NavLink to="/contact">Kontakt</NavLink>
-            </li>
-            <li>
-              <NavLink className="question" to="">
-                Zadaj pytanie
-              </NavLink>
             </li>
           </ul>
         </div>

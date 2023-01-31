@@ -2,7 +2,7 @@ import React from "react";
 import "./about.scss";
 import { Link } from "react-router-dom";
 import { AiFillGithub } from "react-icons/ai";
-import photo from "../../img/photo.png";
+import photo from "../../img/photo2.png";
 
 const About = () => {
   return (
@@ -10,12 +10,14 @@ const About = () => {
       <section id="about">
         <div className="container">
           <div className="about-content">
-            <img src={photo} />
+            <img src={photo} alt="Jakub Stankiewicz" />
 
             <div className="about-details">
               <h3 className="heading">
                 Kilka słow <br></br>o mnie
               </h3>
+
+              <h3 className="mobile-heading heading">Kilka słow o mnie</h3>
 
               <p>
                 Nazywam się Jakub, jestem góralem i pochodzę spod samiuśkich
@@ -34,7 +36,7 @@ const About = () => {
                   Zobacz więcej
                 </Link>
                 <a href="https://github.com/JakubStan">
-                  <AiFillGithub className="git-hub" />
+                  <AiFillGithub className="git-hub" alt="Git Hub" />
                 </a>
               </div>
             </div>

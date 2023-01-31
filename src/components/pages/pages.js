@@ -4,12 +4,18 @@ import SzatanCars from "../../img/SzatanCars.png";
 import Tylka from "../../img/Tylka.png";
 import Elmark from "../../img/Elmark.png";
 
+import "./pages.scss";
+
 const Pages = () => {
   return (
     <>
       <section id="pages">
         <div className="container">
           <div className="portfolio-links">
+            <h3 className="mobile-heading">
+              Zobacz moje najnowsze realizacje.
+            </h3>
+
             <a className="page-link" href="https://www.elmark-rtv.pl/">
               <img src={Elmark} alt="Elmark" />
               <h5>Elmark - Profsjonalny Sklep</h5>
@@ -40,6 +46,13 @@ const Pages = () => {
               <p>Offroad i Paintball w podhalańskich lasach</p>
             </a>
           </div>
+
+          <Link
+            to="portfolio"
+            className="btn btn__dark btn_mobile btn__width-50"
+          >
+            Zobacz więcej
+          </Link>
         </div>
       </section>
     </>
