@@ -2,45 +2,41 @@ import React from "react";
 import "./photo.scss";
 import photo from "../../img/photo.png";
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Photo = () => {
+  const { t, i18n } = useTranslation();
+
   const { pathname } = useLocation();
+
   var heading;
   var description;
   if (pathname === "/portfolio") {
     heading = "Portfolio";
-    description = (
-      <p>
-        Zobacz moje najnowsze realizacje ston www oraz sklepów internetowych.
-      </p>
-    );
+    description = <p>{t("PortfolioDetails")}</p>;
   } else if (pathname === "/offer") {
-    heading = "Oferta / Usługi";
+    heading = <>{t("OfferServices")}</>;
     description = (
-      <p>
-        Tworzę profesjonalne strony www oraz sklepy internetowe. <br></br>
-        Specjalizuję się w technologiach webowych w obszarze Front-Endu: HTML,
-        CSS.
-      </p>
+      <>
+        <p>{t("OfferDetails")}</p>
+        <p>{t("OfferDetails1")}</p>
+      </>
     );
   } else if (pathname === "/about") {
-    heading = "O mnie";
+    heading = <>{t("About")}</>;
     description = (
-      <p>
-        Jestem ambitnym i ciągle rozwijającym się Front-End Developerem.
-        <br></br>
-        Uwielbiam to co robię. Dla mnie to nie tylko praca ale pasja i hobby.
-      </p>
+      <>
+        <p>{t("About_me3")}</p>
+        <p>{t("About_me4")}</p>
+      </>
     );
   } else if (pathname === "/contact") {
-    heading = "Kontakt";
+    heading = <>{t("Contact")}</>;
     description = (
-      <p>
-        Jesteś zinteresowany współpracą? Potrzebujesz strony www, chcesz
-        przenieść swój biznes do internetu?<br></br>
-        Napisz/zadzwoń odpowiem tak szybko jak to możliwe. Na pewno się
-        dogadamy!
-      </p>
+      <>
+        <p>{t("ContactDetails")}</p>
+        <p>{t("ContactDetails1")}</p>
+      </>
     );
   }
 
@@ -55,12 +51,8 @@ const Photo = () => {
 
         <div className="data">
           <div className="container">
-            <img src={photo} alt="" />
-
-            <div>
-              <h2 className="mobile-header">O MNIE</h2>
-              {description}
-            </div>
+            <img src={photo} alt="MyPhoto" />
+            <div className="description">{description}</div>
           </div>
         </div>
       </section>

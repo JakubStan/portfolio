@@ -1,6 +1,7 @@
 import React from "react";
 import "./technologies.scss";
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import Bootstrap from "../icons/Bootstrap.png";
 import HTML from "../icons/Html.png";
@@ -13,6 +14,7 @@ import Webpack from "../icons/Webpack.png";
 
 const Technologies = () => {
   const { pathname } = useLocation();
+  const { t, i18n } = useTranslation();
 
   if (pathname === "/portfolio") {
     return null;
@@ -24,7 +26,7 @@ const Technologies = () => {
       <section id="technologies">
         <div className="container">
           <div className="technologies">
-            <h3 className="heading">Jakich używam technologii</h3>
+            <h3 className="heading">{t("Technologies")}</h3>
             <div className="boxes">
               <div className="box">
                 <img src={HTML} alt="HTML" />

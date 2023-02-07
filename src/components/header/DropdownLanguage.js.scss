@@ -1,0 +1,60 @@
+@import "~bootstrap/scss/bootstrap";
+@import "../../styles/index.scss";
+
+#dropdown-basic-button{
+    background-color: transparent;
+    border: none;
+}
+.flag{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+
+    @include for-Extra-Small-devices {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+#dropdown-basic-button{
+    padding: 0px !important;
+    &::after{
+        display: none;
+    }
+
+    .thumbnail-image{
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+
+        @include for-Extra-Small-devices {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+
+}
+
+.dropdown-menu.show { 
+  
+    background-color: transparent;
+    border: none;
+
+    .dropdown-item{
+        padding: 0px;
+        margin-top: 10px;
+    &:hover{
+        background-color: transparent;
+    }
+    }
+}
+
+
+
+
+
+ 
+
+
+

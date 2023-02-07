@@ -7,6 +7,11 @@ import { HiMail } from "react-icons/hi";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 
+import { useTranslation } from "react-i18next";
+
+import DropdownLanguage from "./DropdownLanguage";
+import DropdownLanguageMobile from "./DropdownLanguageMobile";
+
 const Callto = ({ phone, children }) => {
   return <a href={`tel:${phone}`}>{children}</a>;
 };
@@ -20,6 +25,8 @@ function Mailto({ email, subject, body, ...props }) {
 }
 
 const header = () => {
+  const { t, i18n } = useTranslation();
+
   const [isActive, setIsActive] = useState(false);
 
   const addVisibility = (event) => {
@@ -47,9 +54,14 @@ const header = () => {
             </div>
           </div>
 
-          <a href="https://github.com/JakubStan" className="github-NavLink">
-            <AiFillGithub />
-          </a>
+          <div className="language-change"></div>
+
+          <div className="right">
+            <a href="https://github.com/JakubStan" className="github-NavLink">
+              <AiFillGithub />
+            </a>
+            <DropdownLanguage />
+          </div>
         </div>
 
         <div className="header-bottom">
@@ -59,21 +71,23 @@ const header = () => {
             </h1>
           </NavLink>
           <input class="menu-btn" type="checkbox" id="menu-btn" />
+
           <label class="menu-icon" for="menu-btn" onClick={addVisibility}>
             <span class="navicon"></span>
           </label>
+
           <ul class="menu" className={isActive ? "displayon" : ""}>
             <li>
-              <NavLink to="/about">O mnie</NavLink>
+              <NavLink to="/about">{t("About")}</NavLink>
             </li>
             <li>
-              <NavLink to="/offer">Usługi</NavLink>
+              <NavLink to="/offer">{t("Services")}</NavLink>
             </li>
             <li>
               <NavLink to="/portfolio">Portfolio</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Kontakt</NavLink>
+              <NavLink to="/contact">{t("Contact")}</NavLink>
             </li>
           </ul>
         </div>

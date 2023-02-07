@@ -8,21 +8,11 @@ import icon1 from "../icons/icon1.png";
 import icon2 from "../icons/icon2.png";
 import icon3 from "../icons/icon3.png";
 
+import Resume from "../../Resume.pdf";
+import { useTranslation } from "react-i18next";
+
 const Hero = () => {
-  const onButtonClick = () => {
-    // using Java Script method to get PDF file
-    fetch("CV.pdf").then((response) => {
-      response.blob().then((blob) => {
-        // Creating new object of PDF file
-        const fileURL = window.URL.createObjectURL(blob);
-        // Setting various property values
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "CV.pdf";
-        alink.click();
-      });
-    });
-  };
+  const { t, i18n } = useTranslation();
 
   return (
     <>
@@ -30,32 +20,25 @@ const Hero = () => {
         <div className="container">
           <div className="hero-top">
             <div className="hero-details">
-              <h3>
-                Stworzę dla Twojej firmy porfesionalną <br></br>
-                Stronę WWW/platformę E-Commerce
-              </h3>
+              <h3 className="margin-top">{t("MyOoffer_1")}</h3>
+              <h3 className="margin">{t("MyOoffer_2")}</h3>
 
-              <p>
-                Jestem ambitnym i ciągle rozwijającym się Front-End Developerem.
-              </p>
-              <p>
-                Uwielbiam to co robię. Dla mnie to nie tylko praca ale pasja i
-                hobby.
-              </p>
+              <p>{t("About_1")}</p>
+              <p>{t("About_2")}</p>
 
               <div className="contact">
                 <Link to="contact" className="btn btn__light">
-                  Skontaktuj się
+                  {t("Contact_link")}
                 </Link>
 
                 <a href="https://github.com/JakubStan">
                   <AiFillGithub className="git-hub" />
                 </a>
 
-                <button className="cv-link" onClick={onButtonClick}>
-                  Pobierz CV
+                <a className="cv-link" href={Resume} download="Resume">
+                  {t("Download_link")}
                   <MdOutlineKeyboardArrowDown />
-                </button>
+                </a>
               </div>
             </div>
             <div className="photo">
@@ -63,20 +46,20 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="hero-bottoma">
+          <div className="hero-bottom">
             <div className="box">
               <img src={icon1} alt="Promuj swoją firmę w sieci" />
-              <p>Promuj swoją firmę w sieci</p>
+              <p>{t("box_1")}</p>
             </div>
 
             <div className="box">
               <img src={icon2} alt="Zdobywaj nowych klientów" />
-              <p>Zdobywaj nowych klientów</p>
+              <p>{t("box_2")}</p>
             </div>
 
             <div className="box">
               <img src={icon3} alt="Zwiekszaj dochody firmy" />
-              <p>Zwiekszaj dochody firmy</p>
+              <p>{t("box_3")}</p>
             </div>
           </div>
         </div>

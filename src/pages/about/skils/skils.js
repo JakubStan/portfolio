@@ -1,7 +1,10 @@
 import React from "react";
 import "./skils.scss";
+import ProgressBar from "@ramonak/react-progress-bar";
+import { useTranslation } from "react-i18next";
 
 const Skils = () => {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <section id="skils">

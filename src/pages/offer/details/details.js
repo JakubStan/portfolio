@@ -1,19 +1,15 @@
 import React from "react";
 import "./details.scss";
+import { useTranslation } from "react-i18next";
 
 const Details = () => {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <section id="details">
         <div className="container">
-          <h3 className="heading">Co mogę dla Ciebie zrobić?</h3>
-
-          <p>
-            Tworzę profesjonalne, responsywne strony www oraz sklepy
-            internetowe. Specjalizuję się w technologiach webowych w obszarze
-            Front-Endu: HTML, CSS. Tworzę strony w oparciu o WordPress orz
-            React. Moje strony są zoptymalizowane pod kątem wyszukiwarek.
-          </p>
+          <h3 className="heading">{t("Offer4")}</h3>
+          <p>{t("OfferDetailsDetails")}</p>
         </div>
       </section>
     </>

@@ -2,8 +2,11 @@ import React from "react";
 import Photo from "../../components/photo/photo";
 import "./contact.scss";
 import hand from "./hand.png";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t, i18n } = useTranslation();
+
   const Callto = ({ phone, children }) => {
     return <a href={`tel:${phone}`}>{children}</a>;
   };
@@ -22,21 +25,18 @@ const Contact = () => {
 
       <section id="contact-data">
         <div className="container">
-          <h3 className="heading">Chcesz nawiązać współpracę?</h3>
-          <p>
-            Miło mi ,że chcesz mnie poznać! Proszę Cie zadzwoń/napisz. Odpowiem
-            tak szybko jak to tylko możliwe.
-          </p>
+          <h3>{t("ContactDetails2")}</h3>
+          <p>{t("ContactDetails3")}</p>
 
           <div className="contact-data">
-            <h4>Mailowo:</h4>
+            <h4>{t("Mail")}</h4>
             <Mailto email="stankiewiczj88nt@gmail.com">
               stankiewiczj88nt@gmail.com
             </Mailto>
           </div>
 
           <div className="contact-data">
-            <h4>Telefonicznie</h4>
+            <h4>{t("Phone")}</h4>
             <Callto phone="+48 665 387 278">+48 665 387 278</Callto>
           </div>
         </div>

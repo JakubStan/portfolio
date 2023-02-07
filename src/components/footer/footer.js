@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.scss";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Callto = ({ phone, children }) => {
   return <a href={`tel:${phone}`}>{children}</a>;
@@ -15,6 +16,7 @@ function Mailto({ email, subject, body, ...props }) {
 }
 
 const Footer = () => {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <footer>
@@ -23,23 +25,19 @@ const Footer = () => {
             <h4>
               <span>Jakub</span>Stankiewicz
             </h4>
-            <p>
-              Tworzę profesjonalne strony www oraz sklepy internetowe.
-              Specjalizuję się w technologiach webowych w obszarze Front-Endu:
-              HTML, CSS.
-            </p>
+            <p>{t("FooterDetails")}</p>
           </div>
 
           <div className="col col_inner">
             <div className="inner">
-              <h4>Usługi</h4>
-              <Link to="offer">Strony www</Link>
-              <Link to="offer">E-Sklepy</Link>
+              <h4>{t("Services")}</h4>
+              <Link to="offer">{t("website")}</Link>
+              <Link to="offer">{t("OnlineStores")}</Link>
             </div>
           </div>
 
           <div className="col">
-            <h4>Kontakt</h4>
+            <h4>{t("Contact")}</h4>
             <div className="contact-link">
               <p>Tel:&nbsp;</p>
               <Callto phone="+48 665 387 278">+48 665 387 278</Callto>

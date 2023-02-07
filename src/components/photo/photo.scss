@@ -8,6 +8,10 @@
     flex-direction: column;
     margin-bottom: 300px;
 
+    p{
+        margin-bottom: 0px;
+    }
+
     .mobile-header{
         display: none;
         color: white;
@@ -19,8 +23,15 @@
         justify-content: center;
 
         p{
-            color: $light-blue;           
-            margin-top: 20px;                       
+            color: $light-blue;
+
+            @media (min-width: $Large) and (max-width: 1300px) {
+                width: 45vw;  
+            }            
+        }
+
+        .description{
+            margin-top: 30px;
         }
 
     }
@@ -184,7 +195,7 @@
     
             p{
                 color: $light-blue;           
-                margin-top: 20px;                       
+                     
             }
     
         }

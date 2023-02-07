@@ -9,10 +9,17 @@
         display: flex;
         justify-content: space-between;
         
-  
+        h3{
+            text-align: center;
+        }
 
         .mobile-heading{
             margin-bottom: 20px;
+        }
+
+        
+        .btn{
+            margin-top: 50px;
         }
 
         @media screen and (min-width: 768px) and (max-width: 835px){
@@ -24,6 +31,9 @@
             .left-col{
                 text-align: center;
                 margin-bottom: 50px;
+
+           
+
             }
             .right-col{
                 flex-direction: column;

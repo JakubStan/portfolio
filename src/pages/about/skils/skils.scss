@@ -56,6 +56,10 @@
 
     @include for-Extra-Small-devices {
 
+        .skils{
+            margin-top: 30px;
+        }
+
         .inner{
             flex-direction: column;
             padding: 40px 20px;
@@ -72,7 +76,17 @@
         .inner {    
             padding: 40px 25px;
           }
+
+          h5 {
+            font-size: 13px;
+          }
     }
 
+    
+    @include for-Medium-devices {
+           h5 {
+            font-size: 15px;
+          }
+    }
 
 }

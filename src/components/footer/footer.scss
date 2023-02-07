@@ -37,10 +37,16 @@ footer{
             @include for-Extra-Small-devices {
                 width: 100%;
             }
-
-            @media (min-width: $Small) and (max-width: $Medium){
+  
+            @include for-Small-devices {
                 width: 100%;
             }
+
+            @include for-Medium-devices {
+                width: 35%;
+            }
+
+
         }
         .col{
 
@@ -54,6 +60,10 @@ footer{
 
             @include for-Small-devices {
                 width: 100%;
+            }
+
+            @include for-Medium-devices {
+                width: 30%;
             }
 
             h4{
