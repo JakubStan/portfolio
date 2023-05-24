@@ -1,0 +1,52 @@
+@import "../../styles/index.scss";
+
+#opinions{
+
+
+    .opinions{
+
+        h3{
+            color: $light-blue;
+            margin-bottom: 30px;
+        }
+
+        .boxes{
+            display: flex;
+            justify-content: space-between;
+
+            .box{
+                background-color: white;
+                border-radius: $radius;
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+                width: 350px;
+                
+                .content{ 
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 30px;
+
+                    p{
+                        color: black;                 
+                        margin-bottom: 15px;
+                    }
+                    h3{
+                        font-size: 15px;
+                        margin-bottom: 0px;
+                    }
+                }
+                img{
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 100%;
+                }
+            
+            }
+        }
+
+     
+
+    }
+  
+}

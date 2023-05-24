@@ -1,0 +1,65 @@
+@import "../../styles/index.scss";
+
+
+#contact-data{
+    margin-bottom: 500px;
+    
+    p{
+        margin-bottom: 100px;
+    }
+
+    .contact-data{
+        margin-top: 50px;
+
+        h4{
+            color: white;
+        }
+
+
+        a{
+            color: $light-blue;
+            margin-top: 10px;
+            display: inline-block;
+
+            &:hover{
+                color: white;
+            }
+        }
+    }
+    
+    img{
+        position: absolute;
+        right: 0;
+        bottom: -960px;
+        width: 670px;
+
+
+        @include for-Extra-Small-devices {
+            display: none;
+        }
+
+        @include for-Small-devices {
+            display: none;
+        }
+
+        @include for-Medium-devices {
+            bottom: -880px;
+            width: 415px;
+        }    
+
+        @include for-Large-devices {
+            bottom: -865px;
+            width: 500px;
+        }
+
+        @include for-Extra-Large-devices {
+            bottom: -900px;
+            width: 560px;
+        }
+
+        @include for-ExtraExtraLarge-devices {
+            bottom: -920px;
+            width: 600px
+        }
+    }
+}

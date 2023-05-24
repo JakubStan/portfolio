@@ -1,0 +1,43 @@
+@import "../../styles/index.scss";
+
+#contact{
+    background-color: $dark-blue;
+    color: white;
+    
+
+    .contact{
+        padding: 70px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        
+        @media (max-width: $Small) {
+            flex-direction: column;
+            .btn{
+                width: 100%;
+                margin-top: 40px;
+            }
+            h3{
+                text-align: center;
+            }
+         }
+
+         @media (min-width: $Small) and (max-width: $Large){
+            flex-direction: column;
+            .btn{
+                margin-top: 40px;
+            }
+                     
+         }
+
+
+        .btn-light{
+            color: $dark-blue;
+            background-color: white;
+            margin-right: 200px;
+        }
+
+    }
+
+}

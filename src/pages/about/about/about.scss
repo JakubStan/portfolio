@@ -1,0 +1,68 @@
+@import "../../../styles/index.scss";
+
+
+#aboutme{
+
+
+    p{
+        color: $light-blue;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .link-cv{
+        display: flex;
+        justify-content: end;
+        margin-top: 100px;
+
+
+
+        .cv-link{
+            background-color: $light-blue;
+            color: white;
+            padding: 5px 45px;
+            border-radius: $radius-btn;
+            display: flex;
+            justify-content: center;
+            
+            &:hover{
+                background-color: $dark-blue;
+            }
+    
+            svg{
+                color: white;
+            }
+        }
+    }
+
+    @include for-Extra-Small-devices {
+        .link-cv{
+            justify-content: center;            
+        }
+
+        .cv-link{
+            width: 100%;
+        }
+    }
+
+    @include for-Small-devices {
+        .link-cv{
+            justify-content: center;            
+        }
+        
+        .heading{
+            text-align: center!important; 
+        }
+    }
+
+
+    @include for-Large-devices {
+        .heading{
+            text-align: left; 
+        }
+    }
+
+
+
+
+}

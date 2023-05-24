@@ -1,0 +1,149 @@
+
+@import "../../styles/index.scss";
+
+#pages{
+
+    img{
+        width: 100%;
+    }
+
+    .mobile-heading{
+        display: none;
+        margin-bottom: 20px;
+    }
+
+    .btn_mobile{
+        display: none;        
+    }
+
+    .btn{
+        margin-top: 50px;
+    }
+
+
+
+    @include for-Extra-Small-devices {
+        .portfolio-link {       
+            display: none;
+        }
+
+        h3{
+            display: none;            
+        }
+
+        p{
+            text-align: center;
+        }
+
+        .mobile-heading{
+            color: $light-blue;
+            display: block;
+            text-align: center;
+        }
+
+        .btn{
+            display: none;
+        }
+
+        .btn_mobile{
+            display: block;
+            margin-top: 50px;
+        }
+    }
+
+    @include for-Small-devices {
+
+        .portfolio-link {       
+            display: none;
+        }
+
+        .container{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        h3{
+            display: none;            
+        }
+
+        p{
+            text-align: center;
+        }
+
+        .mobile-heading{
+            color: $light-blue;
+            display: block;
+            text-align: center;
+        }
+
+        .btn{
+            display: none;
+        }
+
+        .btn_mobile{
+            display: block;
+            margin-top: 50px;
+        }
+    }
+
+    @include for-Medium-devices {
+
+        .container{          
+         
+            align-items: center;
+            display: flex;
+            flex-direction: column
+        }
+
+        .mobile-heading{
+            color: $light-blue;
+            display: block;
+            text-align: center;
+        }
+
+        .portfolio-links{
+        flex-direction: column;
+        display: flex;
+        }
+
+
+        .page-link{
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+        }
+
+        .portfolio-link{
+            display: none;
+        }
+
+        .btn_mobile{
+            display: block;
+            margin-top: 50px;
+            max-width: 50%;
+        }
+    }
+
+
+    @include for-Large-devices  {
+        .portfolio-links 
+            
+
+          h5,p{
+            text-align: center;
+          }
+    }
+
+    @include for-Extra-Large-devices  {
+        .portfolio-links 
+ 
+
+      h5,p{
+        text-align: center;
+      }
+    }
+
+}

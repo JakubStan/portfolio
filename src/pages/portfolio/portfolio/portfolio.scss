@@ -1,0 +1,117 @@
+@import "../../../styles/index.scss";
+
+
+
+
+
+.portfolio-links{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 30px;
+
+    @include for-Extra-Small-devices {
+        display: flex;
+        flex-direction: column;
+
+        h3{
+            text-align: center;
+        }
+    }
+
+    @include for-Small-devices {
+        display: flex;
+        flex-direction: column;
+
+        h3{
+            text-align: center;
+        }
+    }
+
+    .page-link{        
+        display: flex;
+        flex-direction: column;             
+        padding: 20px;
+        border-radius: $radius;
+        background-color: white;
+
+        @include for-Extra-Small-devices {
+            align-items: center;
+            margin: 0px;
+            padding: 10px;
+
+        }
+    
+        @include for-Small-devices {
+            align-items: center;
+            margin: 0px;
+            padding: 20px;
+        }
+    }
+              
+  
+  
+        img{
+            width: 100%;
+            border-radius: $radius;
+
+            @include for-Extra-Small-devices {
+                width: 100%;             
+            }
+            
+            @include for-Small-devices {
+                width: 100%;
+            }
+        }
+  
+        h5{
+            color: $dark-blue;
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            @include for-Extra-Small-devices {
+                text-align: center;
+            }
+        }
+  
+        p{
+            color: gray;
+            font-weight: bold;
+        }
+           
+    }
+  
+    .portfolio-link{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 80px;
+
+        @include for-Extra-Small-devices {
+            align-items: center;
+        }
+    
+        @include for-Small-devices {
+            align-items: center;
+        }
+
+
+
+        .content{
+            display: flex;
+            flex-direction: column;      
+            align-items: flex-start;
+       
+  
+        h3{
+            color: $light-blue;
+            font-size: 40px;   
+          
+        }
+    }
+  
+
+        
+    }
+  
+  
+  

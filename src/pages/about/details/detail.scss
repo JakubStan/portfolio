@@ -1,0 +1,29 @@
+@import "../../../styles/index.scss";
+
+
+
+#details{
+
+
+
+    .more-info{
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 50px;
+
+        h3{
+            color: $light-blue;
+        }
+
+    .right{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 280px;
+
+    }    
+    
+    }
+}

@@ -1,0 +1,215 @@
+@import "../../styles/index.scss";
+
+#offer{
+  
+        .offer-content{
+        border-radius: $radius;
+        background-color:  $dark-blue;
+        padding: 80px 80px;
+        display: flex;
+        justify-content: space-between;
+        
+        h3{
+            text-align: center;
+        }
+
+        .mobile-heading{
+            margin-bottom: 20px;
+        }
+
+        
+        .btn{
+            margin-top: 50px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 835px){
+            padding: 80px 20px;
+            flex-direction: column;
+            align-items: center;            
+            
+            .btn,h3{display: none;}
+            .left-col{
+                text-align: center;
+                margin-bottom: 50px;
+
+           
+
+            }
+            .right-col{
+                flex-direction: column;
+            }
+
+            .heading-mobile{
+                display: block;                
+            }
+
+            .btn_mobile{
+                display: block;
+                max-width: 50%;
+                margin-top: 20px;
+            }
+
+               
+        } 
+        
+        @media screen and (min-width: 836px) and (max-width: $Large){
+            padding: 80px 25px;
+            .btn_mobile, .heading-mobile{
+                display: none;
+            }
+
+            .right-col{
+                flex-direction: row;
+            }
+
+            .btn{
+                font-size: 13px;
+            }
+        }
+
+        @include for-Extra-Small-devices {
+            padding: 80px 20px;
+            flex-direction: column;
+
+            h3, .btn{
+                display: none;
+            }
+
+            .btn_mobile{               
+                display: block;
+            }
+
+            .heading-mobile{
+                @include for-Extra-Small-devices {
+                    display: block;
+                    text-align: center;      
+            }
+            }
+        }
+        
+        @include for-Small-devices {
+            align-items: center;
+            padding: 80px 20px;
+            flex-direction: column;
+
+            h3, .btn{
+                display: none;
+            }
+
+            .btn_mobile{
+                display: block;
+                margin-top: 20px;
+            }
+            .heading-mobile{
+                display: block;
+                text-align: center; 
+            }
+        }
+  
+        .right-col{
+        display: flex;
+        justify-content: space-between;
+            
+        @include for-Extra-Small-devices {
+            flex-direction: column;
+
+            .box{
+                text-align: center;
+            }
+
+            p{
+                text-align: center;
+            }
+
+        
+        }
+
+        @include for-Small-devices {
+            flex-direction: column;
+            margin-top: 30px;
+
+            .box{
+                text-align: center;
+            }
+
+            p{
+                text-align: center;
+            }
+        }
+
+        .box{
+                color: white;
+                padding: 20px;
+
+                @include for-Medium-devices {
+                    text-align: center;
+
+                    p{
+                        text-align: center;
+                    }
+                }
+
+                p{
+                    color: white !important;
+                }
+                
+                .box-icon{
+                    background-color: white;
+                    border-radius: $radius;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px;               
+
+                    svg{
+                        color: #262551;
+                        font-size: 50px;
+                        
+                        @include for-Medium-devices {
+                            font-size: 30px;
+                        }
+                    }
+                }
+                h4{
+                    font-size: 30px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }           
+        }
+        }
+
+        @include for-Large-devices{
+        padding: 80px 30px;
+        .btn_mobile, .heading-mobile{
+            display: none;
+        }        
+
+        h3,h4, .box{
+            text-align: center;
+        }
+        }
+
+        @include for-Extra-Large-devices  {
+
+            padding: 80px 40px;
+            .btn_mobile, .heading-mobile{
+                display: none;
+            }        
+    
+            h3,h4, .box{
+                text-align: center;
+            }
+
+        }
+
+        @include for-ExtraExtraLarge-devices {
+            .btn_mobile, .heading-mobile{
+                display: none;
+            }        
+    
+            h3,h4, .box{
+                text-align: center;
+            }
+        }
+    }
+}

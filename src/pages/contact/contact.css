@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:ital,wght@0,400;1,300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0f0f0f;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 85%;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    max-width: 85%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn {
+  padding: 15px 45px !important;
+  border-radius: 30px !important;
+  font-weight: bold;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .btn {
+    width: auto;
+  }
+  .btn__width-50 {
+    max-width: 50%;
+  }
+}
+
+.btn__light {
+  background-color: #85a7fe;
+  color: #012384;
+}
+
+.btn__light:hover {
+  background-color: white;
+}
+
+.btn__dark {
+  background-color: #012384;
+  color: white;
+}
+
+.btn__dark:hover {
+  background-color: #85a7fe;
+}
+
+.btn__white {
+  background-color: white;
+  color: #012384;
+}
+
+.btn__white:hover {
+  background-color: #85a7fe;
+}
+
+.blue-bg {
+  background-color: #012384;
+  height: 300px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  color: white;
+  margin-top: 50px;
+}
+
+.blue-bg h2 {
+  font-size: 45px;
+}
+
+.git-hub {
+  font-size: 50px;
+  color: white;
+}
+
+.github-link:hover, .git-hub:hover {
+  color: #85a7fe;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+@media (max-width: 576px) {
+  section {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  section {
+    margin-top: 50px;
+  }
+}
+
+.cv-link {
+  color: #85a7fe;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cv-link svg {
+  color: #85a7fe;
+  font-size: 35px;
+}
+
+p {
+  text-align: justify;
+  color: #85a7fe;
+  font-size: 15px;
+}
+
+h3 {
+  color: white;
+  font-size: 35px;
+}
+
+@media (max-width: 576px) {
+  h3 {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  h3 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  h3 {
+    font-size: 35px;
+  }
+}
+
+.heading {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 576px) {
+  .heading {
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .heading {
+    text-align: center;
+  }
+}
+
+.cv-link {
+  color: #85a7fe;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cv-link svg {
+  color: #85a7fe;
+  font-size: 35px;
+}
+
+#contact-data {
+  margin-bottom: 500px;
+}
+
+#contact-data p {
+  margin-bottom: 100px;
+}
+
+#contact-data .contact-data {
+  margin-top: 50px;
+}
+
+#contact-data .contact-data h4 {
+  color: white;
+}
+
+#contact-data .contact-data a {
+  color: #85a7fe;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#contact-data .contact-data a:hover {
+  color: white;
+}
+
+#contact-data img {
+  position: absolute;
+  right: 0;
+  bottom: -960px;
+  width: 670px;
+}
+
+@media (max-width: 576px) {
+  #contact-data img {
+    bottom: -910px;
+    width: 300px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  #contact-data img {
+    bottom: -1160px;
+    width: 370px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #contact-data img {
+    bottom: -880px;
+    width: 415px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  #contact-data img {
+    bottom: -865px;
+    width: 500px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  #contact-data img {
+    bottom: -900px;
+    width: 560px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #contact-data img {
+    bottom: -920px;
+    width: 600px;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

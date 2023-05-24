@@ -1,0 +1,441 @@
+@import "../../styles/index.scss";
+
+.header {	
+	
+	width: 100%;
+	z-index: 3;
+	padding-right: 150px;
+	padding-left: 150px;
+	top: 0;
+	position: relative;
+	
+
+	@include for-Extra-Small-devices {
+		padding-right: 0px;
+		padding-left: 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+
+		ul{
+			display: none;			
+		}
+
+	
+		.displayon{
+			top: 180px;
+		}
+
+	}
+
+	@include for-Small-devices {
+		padding-right: 10px;
+		padding-left: 10px;
+		ul{
+			display: none;			
+		}
+
+		.displayon{
+			top: 195px;
+		}
+	}
+
+	@include for-Medium-devices {
+		padding-right: 20px;
+		padding-left: 20px;
+
+		ul{
+			display: block;			
+		}
+	}
+
+	@include for-Large-devices {
+		padding-right: 30px;
+		padding-left: 30px;
+
+		ul{
+			display: block;			
+		}
+	
+	}
+
+	@include for-Extra-Large-devices {
+		padding-right: 100px;
+		padding-left: 100px;
+	}
+
+	.mobile{
+		display: none;
+	}
+
+
+	.displayon{
+		display: block !important;	
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;	
+		border-bottom: 2px solid #85a7fe;
+		z-index: 1;
+
+	}
+
+	.active{
+		color: $light-blue !important;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		overflow: hidden;		
+	
+		
+	}
+
+	.github-NavLink{
+		color: white;
+		font-size: 35px;
+
+		@include for-Extra-Small-devices {
+			display: none;
+		}
+		
+		&:hover{
+			color: $light-blue;
+		}
+	}
+	li {
+
+		@include for-Extra-Small-devices {
+			text-align: center;
+			background-color: $body-bg;
+		
+		}
+
+		@include for-Small-devices {
+			text-align: center;
+			background-color: $body-bg;
+			padding-top: 18px;
+			padding-bottom: 18px;
+		}
+
+		@include for-Medium-devices {	
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
+
+
+
+
+		a {
+			display: block;			
+	  		text-decoration: none;
+      		color: white;
+			font-weight: 600;
+			padding: 15px 45px;	
+			
+			&:hover {
+				color: $light-blue;				
+			}
+
+			@include for-Medium-devices {
+				padding: 15px 20px;
+			}
+
+		
+		}
+
+	
+	}
+	.menu-btn {
+		&:hover {
+			background-color: #f4f4f4;		
+		}
+		display: none;	
+		&:checked {
+			~ {
+				.menu {
+					max-height: 240px;
+					
+				}
+				.menu-icon {
+					.navicon {
+						
+						background: transparent;
+						&:before {
+						
+							transform: rotate(-45deg);
+						}
+						&:after {
+							
+							transform: rotate(45deg);
+						}
+					}
+					&:not(.steps) {
+						.navicon {
+							&:before {
+								
+								top: 0;
+							}
+							&:after {
+							
+								top: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.menu {
+		clear: both;
+		max-height: 0;
+		transition: max-height .2s ease-out;
+
+	}
+	.menu-icon {
+		cursor: pointer;
+		display: inline-block;
+		float: right;
+		padding: 28px 20px;
+		position: relative;
+		user-select: none;
+		cursor: pointer;
+		display: inline-block;
+		
+		.navicon {
+			background: white;
+			display: block;
+			height: 2px;
+			position: relative;
+			transition: background .2s ease-out;
+			width: 18px;
+
+			&:before {
+				background: white;
+				content: '';
+				display: block;
+				height: 100%;
+				position: absolute;
+				transition: all .2s ease-out;
+				width: 100%;
+				top: 5px;
+				
+			}
+			&:after {
+				background: white;
+				content: '';
+				display: block;
+				height: 100%;
+				position: absolute;
+				transition: all .2s ease-out;
+				width: 100%;
+				top: -5px;
+				
+			}
+		}
+	}
+
+	.dropdown{
+
+			position: absolute;
+			right: 10px;
+			top: 15px;
+			top: 3px;
+			
+			@include for-Extra-Small-devices {
+				right: 2px;
+				top: 10px !important;
+			}
+
+			@include for-Small-devices {
+				top: -3px;
+			}
+
+			.dropdown-menu{
+				width: 30px !important;
+				margin: 0;
+				padding-top: 0px;
+				left: 0 !important;
+
+				@include for-Extra-Small-devices {
+					left: -5px !important;
+				}
+
+				.dropdown-item{
+					width: 30px;					
+				}
+			} 
+
+			.dropdown-item {
+				text-align: end;
+			
+			}
+
+			
+	}
+}
+
+
+
+
+@media (min-width: 48em) {
+	.header {
+		li {
+			float: left;
+
+	
+		}
+		.menu {
+			clear: none;
+			float: right;
+			max-height: none;
+
+		}
+		.menu-icon {
+			display: none;
+
+		}
+	}
+}
+
+
+.header-bottom{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+
+  @include for-Extra-Small-devices {
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 95%;
+  }
+
+  @include for-Small-devices {
+	margin-top: 65px;
+  }
+
+  
+  @include for-Medium-devices {
+	margin-top: 55px;
+  }
+
+
+
+	.logo {
+		display: flex;			
+		text-decoration: none;
+		align-items: center;
+		color: white;
+		z-index: 1;
+		
+		@include for-Extra-Small-devices {
+			font-size: 15px;
+		}
+			
+		h1{
+			font-weight: 800;
+			color: white;
+			span{
+				color: $light-blue;
+				font-weight: 300;
+			}
+		}	
+
+	}
+
+	.menu-icon{
+		padding-left: 0px;
+		padding-right: 0px;
+		z-index: 1;
+	}
+
+
+
+}
+
+.header-top{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  .right-col{
+	display: flex;
+	width: 100vw;
+  }
+
+  @include for-Extra-Small-devices {
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+  }
+
+  .right{
+	display: flex;
+	.github-NavLink{
+		margin-right: 50px;
+
+		@include for-Small-devices {
+			display: none;
+		}
+
+
+	}
+
+
+  }
+
+
+  .github-link{
+		
+	display: flex;
+	color: white;
+	font-size: 30px;	
+  }
+
+
+
+
+  .contact{
+	display: flex;
+	justify-content: space-between;
+	width: 500px;
+
+	@include for-Extra-Small-devices {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	  }
+
+	.mail, .phone{
+		display: flex;
+		align-items: center;
+
+		@include for-Extra-Small-devices {
+				margin-top: 5px;
+		}
+	}
+
+	a{
+		color: $light-blue;
+		&:hover{
+			color: white;
+		}
+
+	
+	}
+
+    svg{
+      color: $dark-blue;
+      margin-right: 10px;
+    }
+  }
+}
+
+

@@ -1,0 +1,183 @@
+@import "./mixins";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:ital,wght@0,400;1,300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    background-color: $body-bg;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+
+.container{
+  max-width: 85%;
+  width: 100%;
+  
+
+  @include for-Extra-Small-devices {
+    max-width: 80%;
+  }
+
+  @include for-Small-devices{
+    max-width: 90%;
+  }
+
+  @include for-Medium-devices{
+    max-width: 95%;
+  }
+
+  @include for-Large-devices  {
+    max-width: 85%;
+  }
+
+  @include for-Extra-Large-devices  {
+    max-width: 80%;
+  }
+}
+
+
+a{
+  text-decoration: none;
+  display: flex;
+}
+
+.btn{
+  padding: 15px 45px !important;
+  border-radius: $radius-btn !important;
+  font-weight: bold;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  @include for-Extra-Small-devices{
+    width: 100%;					
+  }  
+
+  @include for-Small-devices {
+    width: auto;
+      &__width-50{
+        max-width: 50%;
+      } 
+  }
+
+  &__light{
+    background-color: $light-blue;
+    color: $dark-blue;
+    &:hover{
+      background-color: white;
+    }
+
+  }
+
+  &__dark{
+    background-color: $dark-blue;
+    color: white;
+    &:hover{
+      background-color: $light-blue;
+    }
+  }
+
+  &__white{
+    background-color: white;
+    color: $dark-blue;
+    &:hover{
+      background-color: $light-blue;
+    }
+  }
+
+}
+
+.blue-bg{
+  background-color: $dark-blue;    
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  color: white;
+  margin-top: 50px;
+  
+    h2{
+      font-size: 45px;
+    }
+  
+  }
+
+
+.git-hub{
+  font-size: 50px;
+  color: white;
+}
+
+.github-link, .git-hub{
+  &:hover{
+    color: $light-blue;
+  }
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+
+  @include for-Extra-Small-devices {
+    margin-top: 50px;
+  }
+
+  @include for-Small-devices{
+    margin-top: 50px;
+  }
+}
+
+
+.cv-link{
+  color: $light-blue;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  svg{
+    color: $light-blue;
+    font-size: 35px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
