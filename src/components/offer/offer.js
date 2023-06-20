@@ -28,7 +28,7 @@ const Offer = () => {
 
               <h3 className="heading-mobile">{t("Offer4")}</h3>
 
-              <Link to="/offer" className="btn btn__white">
+              <Link to="/portfolio" className="btn btn__white">
                 {t("btn_more")}
               </Link>
             </div>

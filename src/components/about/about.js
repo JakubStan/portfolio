@@ -15,8 +15,7 @@ const About = () => {
             <img src={photo} alt="Jakub Stankiewicz" />
 
             <div className="about-details">
-              <h3 className="heading">{t("About_me1")}</h3>
-              <h3 className="heading">{t("About_me2")}</h3>
+              <h3 className="heading">{t("AboutMe")}</h3>
 
               <h3 className="mobile-heading heading">{t("AboutMe")}</h3>
 

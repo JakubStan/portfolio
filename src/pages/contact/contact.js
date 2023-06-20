@@ -40,8 +40,6 @@ const Contact = () => {
             <Callto phone="+48 665 387 278">+48 665 387 278</Callto>
           </div>
         </div>
-
-        <img src={hand} alt="hand" />
       </section>
     </>
   );
