@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import SzatanCars from "../../img/SzatanCars.png";
 import Poloniamoda from "../../img/Poloniamoda.png";
-import Elmark from "../../img/Elmark.png";
+import Gemour from "../../img/Gemour.png";
 
 import "./pages.scss";
 
@@ -16,14 +16,10 @@ const Pages = () => {
           <div className="portfolio-links">
             <h3 className="mobile-heading">{t("Ralizations3")}</h3>
 
-            <a
-              className="page-link"
-              target="_blank"
-              href="https://www.elmark-rtv.pl/"
-            >
-              <img src={Elmark} alt="Elmark" />
-              <h5>{t("Ralizations4")}</h5>
-              <p>{t("Ralizations5")}</p>
+            <a href="https://gemour.pl/" target="_blank" className="page-link">
+              <img src={Gemour} alt=" Gemour" />
+              <h5>Gemour</h5>
+              <p>{t("Gemour")}</p>
             </a>
 
             <div className="portfolio-link">

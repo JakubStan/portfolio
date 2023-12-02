@@ -13,6 +13,9 @@ import Naprawy from "../../../img/Naprawy.png";
 import Sting from "../../../img/Sting.png";
 import Noclegi from "../../../img/Noclegizwidokami.png";
 import Poloniamoda from "../../../img/Poloniamoda.png";
+import OffRoad from "../../../img/OffRoad.png";
+import Outlet from "../../../img/Outlet.png";
+import Gemour from "../../../img/Gemour.png";
 
 const MyPortfolio = () => {
   const { t, i18n } = useTranslation();
@@ -25,6 +28,32 @@ const MyPortfolio = () => {
               <h3>{t("Ralizations1")}</h3>
               <h3>{t("Ralizations2")}</h3>
             </div>
+
+            <a href="https://gemour.pl/" target="_blank" className="page-link">
+              <img src={Gemour} alt=" Gemour" />
+              <h5>Gemour</h5>
+              <p>{t("Gemour")}</p>
+            </a>
+
+            <a
+              href="https://marketowyoutlet.pl/"
+              target="_blank"
+              className="page-link"
+            >
+              <img src={Outlet} alt=" Outlet" />
+              <h5>Marketowy Outlet</h5>
+              <p>{t("Outlet")}</p>
+            </a>
+
+            <a
+              href="https://off-road-zakopane.pl/"
+              target="_blank"
+              className="page-link"
+            >
+              <img src={OffRoad} alt=" OffRoad" />
+              <h5>Off Road Zakopane</h5>
+              <p>{t("OffRoad")}</p>
+            </a>
 
             <a
               href="https://polonia-moda.com.pl/"
